@@ -1,0 +1,7 @@
+.colourBoxGrid {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}

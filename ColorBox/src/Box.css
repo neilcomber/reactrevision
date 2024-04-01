@@ -1,0 +1,6 @@
+.box {
+    display: flexbox;
+    flex-wrap: wrap;
+    width: 20%; 
+    height: '80px';
+}
