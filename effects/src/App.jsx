@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Counter from './Counter'
+import QuoteGenerator from './QuoteGenerator'
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Counter />
+      <QuoteGenerator />
     </>
   )
 }
