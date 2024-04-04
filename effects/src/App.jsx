@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import QuoteGenerator from './QuoteGenerator'
+import GithubSearch from './GithubSearch'
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <QuoteGenerator />
+     <GithubSearch/>
     </>
   )
 }
