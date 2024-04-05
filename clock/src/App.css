@@ -1,0 +1,27 @@
+.clock {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(242, 242, 249);
+  margin: 0 auto;
+}
+
+.button {
+  background-color: rgb(68, 68, 193);
+  color: white;
+  width: 48%;
+  height: 32%;
+  /* padding: 10px 25px; */
+  margin: 1% 1%;
+}
+
+.time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(68, 68, 193);
+  color: white;
+  height: 32%;
+  margin: 0 1%;
+  padding: 0 10%;
+  
+}

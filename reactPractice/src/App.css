@@ -1,0 +1,26 @@
+.outer {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 250px;
+  height: 100px;
+  padding: 2em;
+  border: 1px solid black;
+  margin: 10px;
+  color: rgb(28, 56, 28);
+}
+
+button {
+  padding: 3rem;
+  margin: 10px;
+}
+
