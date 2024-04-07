@@ -1,44 +1,25 @@
 import { useState, useEffect } from 'react'
-
 import './App.css'
+import SignUp from './SignUp'
 
-const url = 'https://jsonplaceholder.typicode.com/users/'
+
 
 function App() {
-  
-  const [data, setData] = useState([])
-  const [toShow, setToShow] = useState(data)
 
-  const getData = async ()=> {
-    const response = await fetch(url);
-    const data = await response.json();
-     setData(data)
-     setToShow(data)
+  const getInput = (e) => {
+    console.log(e.target.name)
   }
+ 
+const addNums = (num1, num2)=> {
+  console.log(num1+num2);
+}
 
 
-  useEffect(()=>{
-    getData()
-  }, [url])
-
-  const handleSearch = ()=>{
-    console.log('bin')
-    setToShow(data.filter((rec)=> rec.name[0].toLowerCase() === 'c'))
-    
-  }
-
-  return (
-    <div className="outer">
-  <h1 className="heading">React Practice</h1>
-  <div className="container">
-    {toShow.map((record) => {
-     return <div className="card"key={record.id}><div><b>Name: </b>{record.name}<br /> <b>email: </b>{record.email}</div></div>
-    })}
+ return (
+  <div className="outer">
+    <SignUp />
   </div>
-  <button onClick={handleSearch}>See only names starting with C</button>
-  <button onClick={()=>{setToShow(data)}}>See all names</button>
-    </div>
-  )
+ )
 }
 
 export default App

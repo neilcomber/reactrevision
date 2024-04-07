@@ -1,0 +1,14 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 2em;
+    border: 1px solid black;
+    margin: 10px;
+    color: rgb(28, 56, 28);
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
