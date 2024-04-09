@@ -15,7 +15,7 @@ export default function SignUp() {
         
     }
     return (
-        <div>
+        <div className='outer'>
             
             <h1>Signup Form</h1>
            <SignUpForm handleSubmit={handleSubmit}/>

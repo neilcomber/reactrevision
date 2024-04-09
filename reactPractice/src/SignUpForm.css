@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    color: rgb(28, 56, 28);
+    margin-bottom: 20px;
+  }
+
+  input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    padding: 10px;
+    margin: 5px 0;
+    color:rgb(255, 255, 255);
+    background-color: rgb(52, 49, 49);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+  }

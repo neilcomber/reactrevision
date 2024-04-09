@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './SignUpForm.css'
 
 export default function SignUpForm({handleSubmit}) {
 
@@ -27,7 +28,7 @@ export default function SignUpForm({handleSubmit}) {
         <input id="age" type="number" name="age" value={formData.age} onChange={(e)=>handleInput(e.target.name, e.target.value)}/>
         <label htmlFor="email">Email</label>
         <input id="email" type="email" name="email" value={formData.email} onChange={(e)=>handleInput(e.target.name, e.target.value)}/>
-        <label htmlFor="password">password</label>
+        <label htmlFor="password">Password</label>
         <input id="password" type="password" name="password" value={formData.password} onChange={(e)=>handleInput(e.target.name, e.target.value)}/>
         <button type="submit">Submit</button>
         <button type="reset" onClick={()=>{setFormData(initialiseData)}}>Reset</button>
